@@ -18,8 +18,8 @@ const replaceName   = require('gulp-replace-name') //Substitui nome de arquivos
 const clean         = require('gulp-clean') //Deleta diretorios ou arquivos
 
 const config = {
-    nickName: 'SEU_NOME',
-    accountName: 'SEU_NOME'
+    nickName: 'igor-cantelmo',
+    accountName: 'igor-cantelmo'
 }
 
 const paths = {
