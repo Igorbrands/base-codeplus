@@ -1,49 +1,116 @@
 .header {
-  &__top-bar {
+  // BARRA DO TOPO
+  &__top {
     background-color: #fff;
     color: #000;
-    max-width: 960px;
+    max-width: 100%;
+    border-bottom: 0.0625rem solid #e0e0e0;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding: 10px;
   }
   &__contact {
-    // display: flex;
-    // align-content: space-between;
-    &-item {
+    display: flex;
+    &-item a {
+      color: #00ba16;
+      margin-right: 40px;
+      font-weight: bold;
+    }
+  }
+  &__orders {
+    b {
+      color: #00ba16;
+    }
+    & svg {
+      margin-right: 0.5em;
+    }
+  }
+  // BARRA DO MEIO
+  &__mid {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4vh;
+  }
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    & img {
+      width: 300px;
+      height: 60px;
     }
   }
   &__center {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    & img {
-      width: 320px;
-      height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    &--search {
+      display: flex;
+      &::placeholder {
+        color: #000;
+      }
+      & input {
+        border: 0;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        flex: 1;
+      }
+      & button {
+        background: none;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+      }
+      & svg {
+        max-width: 50px;
+        padding: 1rem;
+      }
     }
-    & button {
-      width: 13vh;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    & a {
+      display: flex;
+      margin-right: 1.5vw;
+    }
+
+    & svg {
+      max-width: 1.15rem;
+      fill: #00ba16;
+      margin-right: 0.5vw;
+    }
+    &--cart {
+      border: 0.15rem solid #e0e0e0;
+      padding: 0.9em;
     }
   }
 
-  &__nav-menu {
+  // MENU DE NAVEGAÇÃO
+  &__bottom {
     background: #f2f2f2;
-
-    &__nav-items {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    & ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
       & a {
-        font-size: 1.25em;
-        display: block;
-        padding: 10px;
+        padding: 1.5rem 2rem;
+        color: #4a4848;
+      }
+      & li {
+        height: 70px;
+        display: flex;
+      }
+      & li:not(:last-child) {
+        border-right: 0.0625rem solid #e0e0e0;
+      }
+      & a:hover {
+        opacity: 0.5;
       }
     }
   }

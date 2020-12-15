@@ -1,28 +1,47 @@
 <header>
   <!-- barra de topo -->
-  <div class="header__top-bar">
+  <div class="header__top">
     <section class="header__contact">
       <p class="header__contact-item">
         Atendimento ao cliente: <vtex.cmc:IgorCantelmoINFOPhone />
       </p>
       <p class="header__contact-item">Whatsapp: <vtex.cmc:IgorCantelmoWpp /></p>
     </section>
-    <section>
+    <section class="header__orders">
       <a href="/"><i class="fas fa-bars"></i>Meus <b>Pedidos</b></a>
     </section>
   </div>
 
   <!-- barra do meio -->
-  <div class="header__center">
-    <img src="/arquivos/igor-cantelmo-logo-eplus.png" alt="logo" />
-    <input type="search" name="search" placeholder="Digite Aqui" />
-    <button><vtex.cmc:IgorCantelmoSVGLupa /></button>
+  <div class="header__mid">
+    <!--esquerda-->
+    <section class="header__left">
+      <img src="/arquivos/igor-cantelmo-logo-eplus.png" alt="logo" />
+    </section>
+
+    <!--centro-->
+    <section class="header__center">
+      <article class="header__center--search">
+        <input type="search" name="search" placeholder="Digite Aqui" />
+        <button><vtex.cmc:IgorCantelmoSVGLupa /></button>
+      </article>
+    </section>
+
+    <!--direita-->
+    <section class="header__right">
+      <article>
+        <a href="#"><vtex.cmc:IgorCantelmoSVGLogin />Login/Cadastre-se</a>
+      </article>
+      <article class="header__right--cart">
+        <a href="#"><vtex.cmc:IgorCantelmoSVGCart />1 Item(S)</a>
+      </article>
+    </section>
   </div>
-  
+
   <!-- menu de navegação -->
-  <nav class="header__nav-menu">
-    <ul class="header__nav-items">
-      <li><a>TEST CATEGORY</a></li>
+  <nav class="header__bottom">
+    <ul class="header__bottom--items">
+      <li><a href="#">TEST CATEGORY</a></li>
       <li><a href="#">DESENVOLVIMENTO</a></li>
       <li><a href="#">IMPLANTAÇÃO</a></li>
       <li><a href="#">DESIGN</a></li>
